@@ -67,8 +67,42 @@
 
 
 
+
+
+
+## Dynamic classloading.
+* Image build time - yes.
+* Image run time - no.
+
+## Reflection.
+* Reflection Config File. Describe which classes are needed for reflection.
+* `-H:ReflectionConfigurationFiles=`
+
+## Java Native Interfaces (JNI).
+* `-H:+JNI`
+* `-H:+JNIConfigurationFiles=`
+
+## Finalizers.
+* Finalizers - no.
+* Reference and ReferenceQueues - yes 80%.
+* Reference.enqueue() and Reference.isEnqueued() - no.
+
+## Resources.
+* `-H:IncludeResources=<regex>`
+* `-H:IncludeResources="application.yml|META-INF/services/*.*`
+
+## Unsafe.
+
+## Substitutions.
+
+
+## java.langNoClassDefFoundError.
+* `-H:ReportUnsupportedElementsAtRuntime`
+
+
 ## Articles.
 * [The GraalVM frenzy.](https://medium.com/@jponge/the-graalvm-frenzy-f54257f5932c)
+* [Instant Netty Startup using GraalVM Native Image Generation.](https://medium.com/graalvm/instant-netty-startup-using-graalvm-native-image-generation-ed6f14ff7692)
 
 ## Conferences.
 * [Олег Шелаев — Компилируем Java ahead of time с GraalVM. Russian version.](https://www.youtube.com/watch?v=tPezgDSD1Bk&t=1448s)
@@ -76,6 +110,5 @@
 
 ## Conference Speakers.
 * [Oleg Šelajev](https://twitter.com/shelajev?lang=en)
-
 
 ## Help.
