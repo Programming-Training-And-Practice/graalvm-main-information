@@ -7,6 +7,7 @@
 ## Contents at a Glance.
 * [About](#about)
 * [Documentation.](#documentation)
+* [Native Image.](#native-image)
 * [Pros.](#pros)
 * [Articles.](#articles)
 * [Conferences.](#conferences)
@@ -36,6 +37,16 @@
 
 
 
+
+
+## Native Image.
+* Need registration: reflection, dynamic proxy.
+* Not supported: Dynamic Class Loading, Method Handlers, Invoke Dynamic.
+* Different: Static Initialization on build-time.
+
+
+
+
 ## Pros.
 1. High-Performance modern Java.
 2. Low-footprint, fast-startupJava.
@@ -48,6 +59,10 @@
 9. Polyglot in the database.
 10. Create you own language.
 
+
+
+
+## Dead code elimination.
 
 
 
@@ -64,6 +79,10 @@
 
 ## Static Initializers.
 * Writ your own initialization methods and call them explicitly from your main entry point.
+
+
+
+
 
 ## Static Initializers delay.
 * `--delay-class-initialization-to-runtime=class,list`
