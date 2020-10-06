@@ -1,4 +1,4 @@
-# GraalVM Main Information.
+# GraalVM.
 
 
 
